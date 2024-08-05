@@ -1,0 +1,99 @@
+<!doctype html> <!-- 문서 유형 정의, html 형식 문서 선언 -->
+<html lang="ko"> <!-- 문서 전체를 감싸는 태그. 루트 요소로 문서의 시작과 끝을 표시 -->>
+<!--lang 속성 : 문서 고유 언어 설정 -->
+
+<!-- 
+머리부
+문서의 각종 정보(제목, 설명, 외부파일 포함 등등) 작성
+-->
+<head>
+
+    <!--meta 태그 : 종료 태그 없음
+                  사용자에게 표시되는 부분이 아니고 
+                  브라우저/검색엔진/기타 서비스 부분에서 사용되는 설정
+    -->
+                  <meta charset = "UTF-8"> <!-- 문서의 인코딩 설정-->
+<meta name="generator" content="vs code"> <!-- 문서 작성시 사용된 프로그램-->
+<meta name="author" content="wontak"><!--문서 작성자-->
+<meta name="description" content="html 공부를 위한 문서"> <!--문서에 대한 설명-->
+  
+<meta name="viewport" content="width=device-width">
+<!--뷰포트(브라우저의 윕콘텐츠를 볼 수 있는 창의 영역) 설정. 장치길아만큼 설정-->
+
+<!-- 문서의 제목 설정 (브라우저 탭 부분에 표시)-->
+<title>html 이미지 멀티미디어 태그</title>
+
+</head>
+<!--
+몸체부
+브라우저 화면상에 표시할 모든 정보, 내용을 작성
+-->
+<body>
+    <h2>이미지 태그</h2>
+    <!--
+    <img src="표시하고자 하는 이미지 경로"
+         [alt = "이미지의 설명"]
+         width="가로길이(px/%)"
+         height="세로길이(px/%)">
+    -->
+    <h3>*src속성</h3>
+    <img src="resouces/sunflower.jpg">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAC/CAMAAAA1kLK0AAAAtFBMVEX///+ioqJ7e3vPz8/63OsAAABfue5ku+5Zt+1Wtu1mvO74/P72+/7t9/1vwO/n9PyMy/Le8Pug1PTU6/q43/d7xfCY0PP74e6v2/bX7fvD5PiEyPHi8vzq9v233vep2PXK5/lmZma9vb0qKipRUVH09PSSkpKDg4OYxO387PT98Pb++Pumpqbm5uYMDAzb29shISEzMzNCQkKDwO3t2evE0Ozh1+vS0uzs7feiyO2v0PDz8vnHxvPFAAANQElEQVR4nO2ca5ebthaGncxUCAFCXMSAwEDSJs1k0rQ96e30/P//dbaEbGMbY8TYeLJG74eucX2JeNjaF2mL1Q97+vGnd29fhd799OP+la/6L969v/uweiX6cPf+7TCIr29/eTUUtH75+PUYxLtfbz2sW+jXt4cgPr42a9jozR6Ir+9vPZ7b6f2PPRCvmMNqdbcD8ebWY7mtvmxAvL31SG6tjx2Ir7/ceiC31offFIhXPjGkvkgQv73WwNnTh98BxMdbj+Il6M0Pq693tx7ES9Ddb6v/vHpXKfXhp9W7W4/hZejt6udbD+Fl6OPKBk+lNxZEpzsLopMFoWVBaFkQWhaElgWhZUFoWRBaFoSWBaFlQWhZEFoWhJYFoWVBaFkQWhaElgWhZUFoWRBaFoSWBaFlQWhZEFoWhJYFoWVBaFkQWhaElgWhZUFoWRBaFoSWBaFlQWhZEFoWhJYFoWVBaFkQWhaElgWhZUFoWRBaFoSWBaFlQWhZEFoWhJYFoWVBaFkQWi8BRJAkqVKbhN6tBnFTEF5QpIw6INQJ/iJZUwT+8mO5HYigrRnFGC4fYxdTSonrqpcIO6xOgoWHcysQbcaJumzKchGFYRAEYRi2aVMSxYLwrF10QDcBsU6JZtAO+AS/bRhVhhFHy82RBUGsiyKJwOLDmksMTEQnPaNXtZlkRZhYanTLgPDDvKREiXKwfYem4dnvJEzOElovYxVLgIhSDu4ASyEVIDIx7eKqBqYIpnl05QFKXR9EIWODS7NaRJFgcGE8mZ4shA2wA2eSNblU2lbXGuaVQQSCuJiUoguGXoMclpj9QpihbZohIy3m+VVc6FVBeKKEQBgX+qWfuXQoTJz5kVomWlgmGdLHSijsvIcx1hVBeIKD34/X29cZimelSQlFPPT9ImnzuCQqz6BxdeFk/GogvIS7gKF360JWnP74qALuttsXUZ5RMA1cphf1odcCUTAHxro/1Pn3cM1o/3eqFCCDWWTp5XznVUB4EUQHxOcawNAvZgeZVRRz5UIJyxPIz33f68sHdUl7GK6DSTfgGiCSGKyBppf17Uf3PhAx7Wo0TDljWbxTVjJWQhmHwMG6ULXUxXkWlwehEkISL5EPBm1Gd6F1RKRMz/3WZUH4US3vEm2WK6Khmo8zVnKQTuJlGs/BRpg2j66Co+3478wH4YVFohQFSlGSxgwqJUzry0f5M/KVO4iKSKmAsn4NXmLzZpVkcHec8fptHggfbJIQp5O+DZD/YUwoM0igl1PIICkbnR5zQIQN6RaWOunc13U4ePClF5YmKwZPMZZ4zACRK2dN41qIQgiRNjARGyGi8BZLjZMFeS3KRt43BuGXEK4WXka7iDzwmSPOyxREAKkSM8xti7Oxa5q852VoNUb56XdNQYCBmaYIPu3/+/70bwd5Ge8xj59VXawJYqf/cUMQCUbMdAA56mWFNZlegpaytupbQVU+xwv5JaKnaxMzED5MDNO7EpBsF1AFhigbT/ui/KyDWD8al89Zy/ViRE5PLjMQLZp6FTvVzm5NqlLbWnjafS3lxpdD++BbevLTExQj3J580wzEKNNhBZzvXqib7OBJq3U+VyCc/odDYrjQt6fLgYAIZDxLE7dnzpm6NjwpigQdiP2xZ8YeqqfLgQhd85nB+hNBg5g004MBi1ilxha5E6RUl/IRLZ52M3tau2XvlQYx7WIGfMQqQdnsUiagF4saKcKmMSN2670fUCB617KXVgR7q5rpcdSAEIQbwxFsJUP/aYqmIAwr7IruTUsVNfZS/njrSoMwSgnvcfHUFukBeeLgfKZNQOi/VGYJIAxXSw+nZQ7XxnswPe42smiTKyuUErx3y4KcH2XzsvYfyQ9HFCEHrU+/fV0QtescTMs23/eUCSPY+fbt2ycQRWzY4J6enjZ/ymUPNCeIQl55ueoTnKURCAEuYXv/n3qX05OXON/++ONe6hMa+PWnx8cHqcfP6iWAYBiR2Hh6NGjMVZqGTzwt8nWClNbRIJ4eH9SlPjwcs/CYc9+J8KMq5OnhfqsHiQJArGIwCm5oFHBP0OVWqDyCpvvsIMMOkZt1gOG+dzlHKGr0p3rnL+coND7d7+nzau0gCMdCdgvEJsYpDnz0scxSbIbK8x/qtIY5idtY2uPD/uUcfrIg/1X//09UH7518M37Veuo6rcqsYPo9JtSE/j4uIs1AyEm+6kEq62uBjnJ54OreTz8LP/2l3IRzmGidWAQ9/dPzSYEphRs3UknVfRrsM2xpQglMxAVnZhj53ALpHcQCDWPB1fzcPjhGP8tZwblZ2bG/f0/5TaxCDPZQsLr8ygElx889znDhRm4wxPyY7mehzJ5C4AcPQsidOXc+HMgZzycGsB1V/UlXDcIjI5F7kaDPZzlZQgiIIie/U3py6gOLzFC/56bGlCYQfwkA0urT/sk/iEOaXtv17IuQ7g82Z8XCubKKVRffu8zxefo+rHsk9p2ycAw/h43CFlKffrjX3do0j19ftyyePwfO8yJAtmw6XQdm0c+wBcZlx02eFKoNQXhyY2SEWP0hRxXL6dvCUL15y4pkvo89C2BMC6H+XphyspSesUQHMSRG1m1cmtT7QTTLBdhtQ6CdVW1uepNlNZAp6U+5vsaMrE7aWotvIuzvQKhBQM5uyks2InsGqY4xq68qy3c3nLoFkQpQ7pvUXYByKZuuf2met3xpo/trMx3unzVBDJkbZ4oZc532C8mbeLsbfEG0XoxmH6ZtpmDIAydXB7zVX/AUYOAQw16mOfsfaa6DbRfy3nrRO2I8oE8NszQvD3yiGLUdWHVconmKN/aU5CkTcaY7A9QfSN5a7QPO2s3PGJypYBwmJRJEayLRDTSLyGXDxuiJ6hsF8jESBk8oIIioi1pTZ1J9Z7vr0GBwS7SRjP7I4ruNIGciaohoGtnGukIaEt5KgGMVYSBP6F09PwggTRo622A85xxTtfsRpGo4frMjfJSlJ3r9otyeVgHYZeWsbSkaD142/ygKlplYbgfnjjiQ5++nJ7ROhSEqTp9QjjLJ50+qrIuzsmmCtXfUzLWgEQrhGhT+EvNcUqQ6rro180BNd9qNNNy5zXAsWDEM7jiXPU8wZRyXezuCV4iQiShLM76KbeYuAcwX0uB8CEQYtZuIoe/DosiaaUZ5NIOQPBHk7dtUhRhKL1I0VuFklsSV+vL77QUCMgKy5PdjqpJdOzbBXrGfsY0LQRCPO9KwC9f+0zTQiAyRHf5lFk2sVKV3pVjxlIgYI7vaqp4PEM8VgtR98oeYjGLaDDd2EF6drFoJ08uQAVcrc9FIq+veJZpOR+hg2FETHYEslK1bbFA8C67cCifeDLOUAuB8Erk5vICPGbU9NLiNIVKTpSyVilltoXPt1XP0lLhs4KKtUxDT7hG7t/nhDo0U2t/UKSsg6rN3NHN3LlaLLMMWbdiZNhyI5uNIOcmvSyzgDJkdm/ASS2XYntpKdcXDUOGh2R5u+9XwHtO7DUx0JKH5H2ouqhpp4lssjns04kO+0cuoGWfFsDMa8gWD+xaggNtLzKgnRYFESDjHqxV5Qxs54PrvXTtsSiIHGHj8xxBOeQZYcJcOJtYFEQ5o2TwWW8WbGtUgUdaJmdpSRABRWXDTCuNuLfbut4YRzV65GCOlgQh1LEvbDi7mz4IuvnbvfTS3YIg5GEi2sRkvIXnSGmv9zbcbhR9zyBypLrmCmzWYi96k6DYRp3vGARM666dlLlGKzMp2s6HVebuLGK8JcpYi4GQE6Oz8dqs7pJ9gXp1q96G3+D7BdE6mxWJwjVxEl7mMAdnSRjKfcMNQmHU6DhFi4Fg2zKjIiaRL+A0bLna9EC7ii0z7go/p6VAhHhry0fPghhV5VD5TKrScciudz/kAy0jz9NSIJq5lXODNcB+ch5ffnl/KRAc4XlfHNrrKya0C5pqIRCQXc/bmYgH6rSQjB3OmqmFQIQzQbTkuJe84OMHDuZpIRAVmQVCnfg5WP9vwR7mHV0Z1UIgfIoc/WfQxnE7LfZFSC7dypa6zZODgkSek77GhvByzhI1cvhrtUWBZAvR+S/FrIESLZY9alkuH1URl3IpvLnGxvhSINSyPMvkfpVDZU8MIjxuB9qpPB9MhneHADxZaFSy/wrp55bITq3rbPotlllm+vGDJGvXXlIz2SPV9VO1baLVilo+rwdjps8feGW3XF3kGacgzpqLr+NrLVd0tSXFnKf6YXv+Osq52z3vE20em7R9+Odm2oTbrNpTzxW64sNbbvpc7KDNs7J7fBTunh9VskaUu8M24FmWeobRzZ+U7gWVnBVC/qcKJYFsC0JcY2/vhG4O4lgZIh0IQdCJlv0r6AWCqJEqL8Icj5/UvKxeIIhAPvMvla23xhulz9ALBKH2/WVzbrPkA75eIohVIDKW1dfKGIb1IkHI/HLpR/+9UBDLy4LQsiC0LAgtC0LLgtCyILQsCC0LQsuC0LIgtCwILQtCy4LQsiC0LAgtC0LLgtCyILQsCC0LQutu9eXWQ3gZulu9+/LG6s2Xn/8P9IvQsyTdJqMAAAAASUVORK5CYII=">
+    <img src="resouces/KakaoTalk_20240802_153016436.jpg">
+    <h3>*alt속성</h3>
+    <p>
+        -이미지 경로가 잘못되었거나 제대로 표시하지 못하는 경우 대체
+        -시각장애인들을 위한 스크린리더에서 이미지에 대한 설명을 읽어줄 수 있음
+    </p>
+    <img src="sunflower.jpg" alt="해바라기 이미지">
+
+    <img src="KakaoTalk_20240802_153016436.jpg" alt="레드">
+
+<h3>width, height 속성</h3>
+<p>
+    이미지의 가로 세로 길이 조정 가능
+    고정길이(px), 가변길이(%) 지정 => 기본값 : px
+</p>
+
+<h4>고정 길이</h4>
+<img src="resouces/sunflower.jpg" width="200" height="150">
+<img src="resouces/sunflower.jpg" width="200" height="100">
+<img src="resouces/sunflower.jpg" width="200" height="150">
+<img src="resouces/sunflower.jpg" width="200" height="150">
+<img src="resouces/KakaoTalk_20240802_153016436.jpg" width="200" height="150">
+
+<h4>가변 길이</h4>
+<p>화면 사이즈가 변경되거나 부모요소 사이즈에 따라 이미지 크기 변경</p>
+<img src="resouces/sunflower.jpg" width="10%" height="150">
+<img src="resouces/sunflower.jpg" width="15%" height="150">
+<img src="resouces/sunflower.jpg" width="20%" height="150">
+<img src="resouces/sunflower.jpg" width="25%" height="150">
+<img src="resouces/KakaoTalk_20240802_153016436.jpg" width="30%" height="150">
+<hr>
+<h2>오디오 태그</h2>
+<!--
+<audio src = "오디오 파일 경로" controls autoplay loop></audio>
+-controls : 재생도구 출력여부
+-autoplay : 자동재생 여부(크롬 x ie o 거의 안된다)
+-loop 반복재상여부
+-muted : 음소거 설정
+-->
+
+<audio src="resouces/inner_peace.mp3" controls loop></audio>
+
+<hr>
+
+<h2>비디오 태그</h2>
+<!--
+<video src="비디오 파일 경로" controls autoplay loop
+width="" height="" poster= "썸네일 이미지 경로"></video>
+-->
+<video src="resouces/sample.mp4"
+controls autoplay loop
+width="300" height="200" poster= "resouces/sunflower.jpg"></video>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+</body>
+
+</html>
